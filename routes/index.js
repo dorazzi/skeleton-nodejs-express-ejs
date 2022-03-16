@@ -9,4 +9,9 @@ router.get('/', async function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
+router.get('/inserir', async function (req, res, next){
+ const autores = await Autor.inserir();
+  res.json(autores.rows);
+});
+
 module.exports = router;

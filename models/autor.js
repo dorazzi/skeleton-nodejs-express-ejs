@@ -7,6 +7,8 @@ class Autor {
     const values = [data.nome, data.sobrenome, data.data_nascimento]
     return await connect.query(sql,values);
   }
+
+  static async 
   
    static async selecionar(){
      const connect = await db.connect();
