@@ -25,6 +25,11 @@ app.use('/selecionar', indexRouter);
 app.use('/atualizar', indexRouter);
 app.use('/deletar', indexRouter);
 app.use('/users', usersRouter);
+//livros
+app.use('/inserir2', indexRouter);
+app.use('/select2', indexRouter);
+app.use('/atualizar2', indexRouter);
+app.use('/deletar2', indexRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

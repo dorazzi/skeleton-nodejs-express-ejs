@@ -20,7 +20,7 @@ class Autor {
   static async atualizar(data, id){
     const connect = await dB.connect();
     const sql = "update  autores set nome= $1, sobrenome= $2, data_nascimento= $3 where id=$4";
-    const values = [data.nome, data.sobrenome, data.data_nascimento, id]
+    const values = [data.nome, data.sobrenome, data.data_nascimento, data.id]
     return await connect.query(sql, values);
     
   }
